@@ -1,0 +1,19 @@
+$ORIGIN bedroom.ephec-ti.eu.
+$TTL 604800
+@       IN      SOA     ns1.bedroom.ephec-ti.eu. martin.michotte.gmail.com. (
+                        1           ; Serial
+                        604800      ; Refresh
+                        86400       ; Retry
+                        2419200     ; Expire
+                        604800 )    ; Negative Cache TTL
+;
+; NS configs
+            IN      NS      ns1.bedroom.ephec-ti.eu.
+ns          IN      A       X.X.X.X
+
+; Web
+www         IN      A       x.x.x.x 
+
+; Mail
+mail        IN      A       X.X.X.X
+smtp        IN      CNAME   mail

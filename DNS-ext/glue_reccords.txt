@@ -1,0 +1,4 @@
+bedroom                     IN      NS      ns1.bedroom.ephec-ti.eu.
+bedroom                     IN      NS      ns2.bedroom.ephec-ti.eu.
+ns1.bedroom.ephec-ti.eu.    IN      A       X.X.X.X
+ns2.bedroom.ephec-ti.eu.    IN      A       Y.Y.Y.Y
