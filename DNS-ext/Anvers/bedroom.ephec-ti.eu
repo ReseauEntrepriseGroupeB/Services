@@ -9,11 +9,11 @@ $TTL 604800
 ;
 ; NS configs
             IN      NS      ns2.bedroom.ephec-ti.eu.
-ns          IN      A       x.x.x.x
+ns2         IN      A       5.135.241.48
 
 ; Web
-www         IN      A       x.x.x.x 
+www         IN      A       5.135.241.48 
 
 ; Mail
-mail        IN      A       X.X.X.X
+mail        IN      A       5.135.241.48
 smtp        IN      CNAME   mail
