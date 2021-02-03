@@ -3,7 +3,7 @@ version: '3'
 services:
   ns-ext:
     build: 
-      context: ./DNS-ext/Bruxelles
+      context: ./Bruxelles
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:

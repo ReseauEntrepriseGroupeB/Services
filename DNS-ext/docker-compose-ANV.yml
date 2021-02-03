@@ -1,10 +1,9 @@
 version: '3'
 
 services:
-
   ns-ext:
     build: 
-      context: ./DNS-ext/Anvers
+      context: ./Anvers
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
