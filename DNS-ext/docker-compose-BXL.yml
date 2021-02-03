@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ns-ext:
+    build: 
+      context: ./DNS-ext/Bruxelles
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    container_name: ns1
