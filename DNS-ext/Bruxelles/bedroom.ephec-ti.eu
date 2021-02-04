@@ -17,3 +17,10 @@ www         IN      A       5.196.121.232
 ; Mail
 mail        IN      A       5.196.121.232
 smtp        IN      CNAME   mail
+pop                 IN  CNAME   mail
+imap                IN  CNAME   mail
+
+mail._domainkey IN      TXT     ( "v=DKIM1; h=sha256; k=rsa; "
+          "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAolIE+haRt21V0MZNvObr1emK1mdLrm48MhPUdjR1vXyaykwymg6rBtLkeFF9Mf52lncd5ivs+u70yLMm/6B4hoi9ugHQQdBElz9EUqipaQS87jGoVRfz8vy849Cz/ARXyJ4S8Nol510ylGIwJpFtXMxb9>          "xRf0nL38C0jmT6qYen3dSvuSmJFjs3Y4RXXftvNALY7vnXwkpgY8gHLxvbV45Zd87Bx/6Z9ofYZ/sFS1rZTwzjtZMqTJOUeubPepyfP5LSDaHnF9hMO7trFVvlt4DfwGtvVA5gywIDAQAB" )  ; ----- DKIM key mail for bedroom.ephec-ti.eu
+
+mail IN TXT "v=spf1 a mx ip4:172.17.11.4 ~all"
