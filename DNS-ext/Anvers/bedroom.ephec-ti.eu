@@ -3,9 +3,9 @@ $TTL 604800
 @       IN      SOA     ns2.bedroom.ephec-ti.eu. martin.michotte.gmail.com. (
                         1           ; Serial
                         604800      ; Refresh
-                        86400       ; Retry
-                        2419200     ; Expire
-                        604800 )    ; Negative Cache TTL
+                        60          ; Retry
+                        60          ; Expire
+                        60 )        ; Negative Cache TTL
 ;
 ; NS configs
             IN      NS      ns2.bedroom.ephec-ti.eu.
